@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Will You Be My Valentine?</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #ffcccb;
+      text-align: center;
+      padding: 50px;
+    }
+    h1 {
+      color: #d63447;
+      font-size: 3em;
+    }
+    p {
+      color: #333;
+      font-size: 1.5em;
+    }
+    .valentine-form {
+      margin-top: 20px;
+    }
+    .valentine-form button {
+      padding: 10px 20px;
+      font-size: 1.2em;
+      margin: 10px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .valentine-form button#yes {
+      background-color: #4CAF50;
+      color: white;
+    }
+    .valentine-form button#no {
+      background-color: #f44336;
+      color: white;
+    }
+    .response {
+      margin-top: 20px;
+      font-size: 1.5em;
+      color: #d63447;
+    }
+    .photo {
+      margin-top: 20px;
+    }
+    .photo img {
+      width: 300px;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+  </style>
+</head>
+<body>
+  <h1>I have a very important question for you 🤨</h1>
+  <p>Sipho sam, will you be my Valentine 🥺🥺</p>
+
+  <div class="valentine-form">
+    <button id="yes">Yes!</button>
+    <button id="no">No</button>
+  </div>
+  <div class="response" id="response"></div>
+
+  <script>
+    document.getElementById('yes').addEventListener('click', function() {
+      document.getElementById('response').innerHTML = "Yay ☺☺🥰🥰! You've made me the happiest baby girl emhlabeni! 💖";
+    });
+
+    document.getElementById('no').addEventListener('click', function() {
+      document.getElementById('response').innerHTML = "Ngeke ngizwe ngawe 😤";
+    });
+  </script>
+</body>
+</html>
